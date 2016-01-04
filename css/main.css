@@ -1,0 +1,62 @@
+
+@font-face {
+  font-family: 'duo';
+  src: url('./assets/Duo-Licht.ttf');
+}
+@font-face {
+  font-family: 'shadow';
+  src: url('./assets/whitebold.ttf');
+}
+body {
+  text-align: center;
+  margin: 0 auto;
+  background-image: url('./assets/texturedWhite.jpg');
+}
+.name{
+  font-family: 'duo';
+  text-align: center;
+  font-size: 65px;
+  padding-top: 250px;
+}
+#typewriter p {
+  font-family: 'duo';
+  font-size: 25px;
+}
+.landing {
+
+}
+
+.page {
+  height: 100vh;
+}
+.icon {
+  width: 70px;
+  padding: 200px 10px;
+}
+a{
+  text-decoration: none;
+}
+#wrap {
+  width: 100%;
+  margin 0 auto;
+}
+#left_col {
+  width: 50%;
+  float: left;
+  padding-top: 80px;
+  padding-left: 50px;
+}
+#right_col {
+  width: 40%;
+  float: right;
+  padding-top: 20px;
+}
+
+#selfie {
+  width: 350px;
+  border: 2px black solid;
+}
+#wrap {
+  font-family: 'inconsolata';
+  font-size: 40px;
+}

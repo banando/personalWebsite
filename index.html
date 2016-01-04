@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+  <meta charset="UTF-8">
+  <title>Fernando Orozco</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link href='https://fonts.googleapis.com/css?family=Dancing+Script:700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+
+</head>
+<body ng-controller="MainController as vm">
+  <div class="container">
+    <div class="nav-bar">
+
+    </div>
+  </div>
+  <div class="container landing page">
+    <div id="typewriter"></div>
+      <a href="https://github.com/banando">
+      <img class="icon" src="./css/assets/blacktocat.png" alt="github">
+    </a>
+    <a href="https://github.com/banando">
+      <img class="icon" src="./css/assets/linkedin.png" alt="github">
+    </a>
+    <a href="https://github.com/banando">
+      <img class="icon" src="./css/assets/email.png" alt="github">
+    </a>
+
+  </div>
+  <div class="container projects page">
+    <p>project page</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <img src="./css/assets/zoom-sa.png" alt="window">
+        </div>
+        <div class="col-lg-4">
+          <h1>{{vm.project.name}}</h1>
+          <p>About : {{vm.project.about}}</p>
+          <table class="table">
+            <tr>
+              <td>Technologies used</td>
+            </tr>
+            <tr ng-repeat="tech in vm.project.tech_used">
+              <td>{{tech}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container contact page">
+    <p>Contact page</p>
+    <div id="wrap">
+      <div id="left_col">
+        <table>
+          <tr>
+            <th>Email</td>
+            <td>@Forozco2085@gmail.com</td>
+          </tr>
+          <tr>
+            <th>Github</td>
+            <td>/Banando</td>
+          </tr>
+          <tr>
+            <th>Linkedin</td>
+            <td>/FernandoOrozcoJr</td>
+          </tr>
+        </table>
+      </div>
+      <div id="right_col">
+        <img id="selfie" src="./css/assets/selfie.JPG" alt="me">
+      </div>
+    </div>
+
+  </div>
+  <script src="./js/app.js"></script>
+  <script src="./js/main-controller.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
