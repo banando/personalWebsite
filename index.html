@@ -30,18 +30,21 @@
 
   </div>
   <div class="container projects page">
-    <p>project page</p>
+    <h1>project page</h1>
     <div class="container">
+      <a href="#" class="projectSelection" ng-repeat="project in vm.projects" ng-click="vm.selectProject($index)">{{project.name}}</a>
+    </div>
+    <div class="container" id="projectInfo">
       <div class="row">
-        <div class="col-lg-8">
-          <img src="./css/assets/zoom-sa.png" alt="window">
+        <div class="col-lg-7">
+          <img id="frame" src="./css/assets/zoom-sa.png" alt="window">
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-5">
           <h1>{{vm.project.name}}</h1>
           <p>About : {{vm.project.about}}</p>
-          <table class="table">
+          <table class="table table-bordered table-condensed .table-responsive">
             <tr>
-              <td>Technologies used</td>
+              <th>Technologies used</th>
             </tr>
             <tr ng-repeat="tech in vm.project.tech_used">
               <td>{{tech}}</td>
@@ -52,7 +55,7 @@
     </div>
   </div>
   <div class="container contact page">
-    <p>Contact page</p>
+    <h1>Contact page</h1>
     <div id="wrap">
       <div id="left_col">
         <table>

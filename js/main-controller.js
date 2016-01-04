@@ -33,8 +33,13 @@
       name:       "Top 5",
       tech_used:  ["Ruby on Rails", "Postgresql", "Javascript"]
     };
+    vm.projects = [pokemon, top5, hat, openGym];
     vm.message = "Hello World!";
-    vm.project = top5;
+    vm.project = pokemon;
+    vm.selectProject = function (i) {
+      event.preventDefault();
+      vm.project = vm.projects[i];
+    }
   }
 
 })();
