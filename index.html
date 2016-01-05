@@ -12,9 +12,21 @@
 </head>
 <body ng-controller="MainController as vm">
   <div class="container">
-    <div class="nav-bar">
+    <nav class="navbar nav-bar navbar-fixed-top">
 
-    </div>
+      <a href="#" class="navbar-brand">Fernando Orozco</a>
+      <ul class="nav navbar-nav">
+        <li class="nav-item active">
+          <a href="#" class="nav-link">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Contact</a>
+        </li>
+      </ul>
+    </nav>
   </div>
   <div class="container landing page">
     <div id="typewriter"></div>
@@ -30,14 +42,14 @@
 
   </div>
   <div class="container projects page">
-    <h1>project page</h1>
+    <h1>Project Page</h1>
     <div class="container">
       <a href="#" class="projectSelection" ng-repeat="project in vm.projects" ng-click="vm.selectProject($index)">{{project.name}}</a>
     </div>
     <div class="container" id="projectInfo">
       <div class="row">
         <div class="col-lg-7">
-          <img id="frame" src="./css/assets/zoom-sa.png" alt="window">
+          <img id="frame" src='{{vm.project.image_uri}}' alt="window">
         </div>
         <div class="col-lg-5">
           <h1>{{vm.project.name}}</h1>
@@ -55,7 +67,7 @@
     </div>
   </div>
   <div class="container contact page">
-    <h1>Contact page</h1>
+    <h1>Contact Page</h1>
     <div id="wrap">
       <div id="left_col">
         <table>
