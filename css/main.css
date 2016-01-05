@@ -28,10 +28,13 @@ th {
   background-image: url('./assets/texturedWhite.jpg');
 }
 .projects {
-  background-color: white;
+  background-color: black;
 }
 .contact {
   background-color: grey;
+}
+nav {
+  background-color: rgba(200,200,200, .5);
 }
 
 .page {
@@ -83,4 +86,10 @@ a.hover {
 }
 #frame {
   width: 600px;
+  border: 2px double grey;
+  border-radius: 10px;
+}
+#techUsed {
+  width: 55%;
+  margin: 0 auto;
 }
