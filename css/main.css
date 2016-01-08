@@ -31,7 +31,7 @@ th {
   background-color: black;
 }
 .contact {
-  background-color: grey;
+  background-color: #BEBBCE;
 }
 nav {
   background-color: rgba(200,200,200, .5);
@@ -92,4 +92,8 @@ a.hover {
 #techUsed {
   width: 55%;
   margin: 0 auto;
+}
+#siteLink {
+  display: inline-block;
+  padding-top: 100px;
 }
