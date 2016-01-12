@@ -15,7 +15,7 @@
       name:       "Pokemon Battle",
       tech_used:  ["Html 5", "Css 3", "Javascript"],
       link:       "banando.github.io/pokemon",
-      color:      "#54D0F6"
+      color:      "#629D03"
     };
     var hat = {
       image_uri:  "https://i.imgur.com/69Q3mUH.png",
