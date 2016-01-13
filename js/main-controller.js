@@ -14,7 +14,7 @@
       about:      "pokemon battle simulation game: a simple game where you get to choose a pokemon and choose attack like the original gameboy game.",
       name:       "Pokemon Battle",
       tech_used:  ["Html 5", "Css 3", "Javascript"],
-      link:       "banando.github.io/pokemon",
+      link:       "https://banando.github.io/pokemon",
       color:      "#629D03"
     };
     var hat = {
